@@ -6,20 +6,20 @@
 */
 void print_alphabet_x10(void)
 {
-	char a[] = "abcdefghijklmnopqrstuvwxyz\n";
 	int t  = 0;
 	int i;
 
 	while (t < 10)
 	{
-		i = 0;
+		i = 'a';
 
-		while (a[i] != '\0')
+		while (i < 'z')
 		{
-			_putchar(a[i]);
+			_putchar(i);
 			i++;
 		}
 
+		_putchar('\n')
 		t++;
 	}
 }
