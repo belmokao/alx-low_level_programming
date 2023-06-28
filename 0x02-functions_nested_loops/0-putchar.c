@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main()
+int main(void)
 {
 	char a[] = "_putchar\n";
 	int i = 0;
