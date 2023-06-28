@@ -1,5 +1,4 @@
 #include "main.h"
-
 int main()
 {
 	char a[] = "_putchar\n";
