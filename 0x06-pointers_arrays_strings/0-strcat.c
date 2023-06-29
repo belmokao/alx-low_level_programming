@@ -1,14 +1,24 @@
-#include "string.h"
-
 /**
  * _strcat - take two arguement dest and src
  *
  * Return - concatetinated string
  */
 
+int _strlen(char *src)
+{
+    int i = 0;
+    
+    while (src[i] != '\0')
+    {
+        i++;
+    }
+
+    return i;
+}
+
 char *_strcat(char *dest, char *src)
 {
-    int dest_len = strlen(dest);
+    int dest_len = _strlen(dest);
     int i = 0;
 
     while (src[i] != '\0')
