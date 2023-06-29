@@ -1,42 +1,24 @@
 #include "main.h"
-
 /**
- * _strlen - calculate the length of a string
- * @src: input string
+ *_strcat - function that concatenates two strings.
+ *@dest: pointer to destination string.
+ *@src: pointer to source string.
  *
- * Return: length of the string
- */
-int _strlen(char *src)
-{
-    int i = 0;
-
-    while (src[i] != '\0')
-    {
-        i++;
-    }
-
-    return (i);
-}
-
-/**
- * _strcat - concatenate two strings
- * @dest: destination string
- * @src: source string
- *
- * Return: pointer to the resulting string dest
+ *Return: pointer to destination string.
  */
 char *_strcat(char *dest, char *src)
 {
-    int dest_len = _strlen(dest);
-    int i = 0;
+    int length, j;
 
-    while (src[i] != '\0')
+    length = 0;
+    while (dest[length] != '\0')
     {
-        dest[dest_len + i] = src[i];
-        i++;
+        length++;
     }
-
-    dest[dest_len + i] = '\0';
-
+    for (j = 0; src[j] != '\0'; j++, length++)
+    {
+        dest[length] = src[j];
+    }
+    dest[length] = '\0';
     return (dest);
 }
