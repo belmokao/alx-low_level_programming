@@ -1,4 +1,6 @@
-/*
+#include "string.h"
+
+/**
  * _strcat - take two arguement dest and src
  *
  * Return - concatetinated string
