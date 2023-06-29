@@ -6,7 +6,7 @@
  *
  *Return: pointer to destination string.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
     int length, j;
 
@@ -15,7 +15,7 @@ char *_strcat(char *dest, char *src)
     {
         length++;
     }
-    for (j = 0; src[j] != '\0'; j++, length++)
+    for (j = 0; j < n; j++, length++)
     {
         dest[length] = src[j];
     }
