@@ -19,7 +19,7 @@ char *leet(char *str)
         while(a[j] != '\0')
         {
             if (a[j] == str[i])
-                str[i] = n[j]
+                str[i] = n[j];
             j++;
         }
         i++;
