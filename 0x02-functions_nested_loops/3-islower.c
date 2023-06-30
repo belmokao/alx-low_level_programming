@@ -4,7 +4,7 @@
 * _islower - chekc chars is lowwer
 * @c : input char
 *
-* Return - return 0/1
+* Return - 0 or 1 in return 
 */
 int _islower(int c)
 {
@@ -16,4 +16,4 @@ int _islower(int c)
 	{
 		return (0);
 	}
-}  
+}
