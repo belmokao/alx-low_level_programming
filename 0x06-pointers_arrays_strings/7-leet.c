@@ -6,7 +6,6 @@
 *
 * Return: reuturn src as pointer destination
 */
-
 char *leet(char *str)
 {
     int i, j;
@@ -22,6 +21,7 @@ char *leet(char *str)
                 str[i] = n[j];
             j++;
         }
+	j = 0;
         i++;
     }
 
