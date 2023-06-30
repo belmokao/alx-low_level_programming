@@ -8,22 +8,22 @@
 */
 char *leet(char *str)
 {
-    int i, j;
-    char n[] = "4433007711";
-    char a[] = "aAeEoOtTlL\0";
+	int i, j;
+	char n[] = "4433007711";
+	char a[] = "aAeEoOtTlL\0";
 
-    i = j = 0;
-    while (str[i] != '\0')
-    {
-        while(a[j] != '\0')
-        {
-            if (a[j] == str[i])
-                str[i] = n[j];
-            j++;
-        }
-	j = 0;
-        i++;
-    }
+	i = j = 0;
+	while (str[i] != '\0')
+	{
+		while (a[j] != '\0')
+		{
+			if (a[j] == str[i])
+				str[i] = n[j];
+			j++;
+		}
+		j = 0;
+		i++;
+	}
 
-    return (str);
+	return (str);
 }
