@@ -5,14 +5,15 @@
  * @s: source string
  *
  * Return: return destination
- * */
+ */
 char *rot13(char *s)
 {
 	int i = 0;
 
 	while (s[i] != '\0')
 	{
-		s[i] += 13;
+		if ((s[i] >= 'a' && s[i] <= 'z') || (s[i] > 'A' && s[i] <= 'Z'))
+			s[i] += 13;
 		i++;
 	}
 
