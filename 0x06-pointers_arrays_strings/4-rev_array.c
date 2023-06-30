@@ -6,7 +6,7 @@
  * @n: size of
  *
  * Return - void
- * */
+ */
 void reverse_array(int *a, int n)
 {
 	int tmp, s, e;
