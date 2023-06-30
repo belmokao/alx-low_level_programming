@@ -1,13 +1,20 @@
-#include "main.h"
+#include "main.h"::
 
-char *cap_string(char *)
+/**
+ * string_toupper - method upercase chars
+ * @str: argurment to
+ *
+ * Return: return upper case string
+ */
+char *string_toupper(char *str)
 {
-	#include "main.h"
+        int i = 0;
 
-	char *cap_string(char *)
-	{
-		:#include "main.h"
-
-			char *cap_string(char *)
-			{
-				:wq
+        while (str[i+] != '\0')
+        {
+                if ((str[i] == ' ' || str[i] == '\t' || str[i] == '.' || str[i] == '{' || str[i] == '}' || ) && str[i] == '\t')
+                        str[i] = str[i] - 32;
+        }
+        return (str);
+}
+~ 
