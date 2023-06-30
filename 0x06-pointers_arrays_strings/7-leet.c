@@ -6,24 +6,24 @@
 *
 * Return: reuturn src as pointer destination
 */
+
 char *leet(char *str)
 {
-	int i = 0;
+    int i, j;
+    char n[] = "4433007711";
+    char a[] = "aAeEoOtTlL\0";
 
-	while (str[i] != '\0')
-	{
-		if (str[i] == 'a' || str[i] == 'A')
-			str[i] = '4';
-		if (str[i] == 'e' || str[i] == 'E')
-			str[i] = '3';
-		if (str[i] == 'o' || str[i] == 'O')
-			str[i] = '0';
-		if (str[i] == 't' || str[i] == 'T')
-			str[i] = '7';
-		if (str[i] == 'l' || str[i] == 'L')
-			str[i] = '1';
-		i++;
-	}
+    i = j = 0;
+    while (str[i] != '\0')
+    {
+        while(a[j] != '\0')
+        {
+            if (a[j] == str[i])
+                str[i] = n[j]
+            j++;
+        }
+        i++;
+    }
 
-	return (str);
+    return (str);
 }
