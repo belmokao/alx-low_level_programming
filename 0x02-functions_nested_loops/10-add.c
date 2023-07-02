@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * add - sum func
+/**
+ * add - sum func calcu
  * @a: first input
  * @b: second one
  *
@@ -9,5 +9,5 @@
  */
 int add(int a, int b)
 {
-	return a + b;
+	return (a + b);
 }
