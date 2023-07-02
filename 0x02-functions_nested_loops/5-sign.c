@@ -3,9 +3,9 @@
 /**
  * print_sign - print number
  * @n: input
- * 
+ *
  * Return: reurn desitee ouput
-*/
+ */
 int print_sign(int n)
 {
 	if (n > 0)
