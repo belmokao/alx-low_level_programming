@@ -42,9 +42,3 @@ void times_table(void)
         c++;
     }
 }
-
-// int main(void)
-// {
-//     times_table();
-//     return 0;
-// }
