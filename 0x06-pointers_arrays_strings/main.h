@@ -8,3 +8,4 @@ char *leet(char *);
 int _strcmp(char *s1, char *s2);
 int _putchar(char a);
 void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
