@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* jack_bauer - time print 
+* jack_bauer - time print
 * start from midnight to midnight - 1minite
 */
 void jack_bauer(void)
