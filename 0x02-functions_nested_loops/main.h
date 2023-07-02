@@ -1,3 +1,4 @@
+int add(int, int);
 void jack_bauer(void);
 int _putchar(char a);
 void print_alphabet(void);
