@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 
-int atoi(char *str)
+int atoii(char *str)
 {
     int result = 0;
     int sign = 1;
@@ -21,7 +22,7 @@ int atoi(char *str)
     return result * sign;
 }
 
-int strlen(char *s)
+int strlenn(char *s)
 {
     int i = 0;
 
@@ -29,14 +30,16 @@ int strlen(char *s)
     {
         i++;
     }
-    return 0;
+    return i;
 }
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    if (strlen(r) < size_r)
+    if (strlenn(n1) > size_r || strlenn(n2) > size_r)
         return (0);
-    int resu = atoi(n1) + atoi(n2);
-    return (char *)resu;
+    int resu = atoii(n1) + atoii(n2);
+    printf("test %d \n", atoii(n2));
+    r = (char *)resu;
+    return r;
     return (0);
 }
