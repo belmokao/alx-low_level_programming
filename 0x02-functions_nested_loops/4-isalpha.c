@@ -3,7 +3,7 @@
 /**
  * _isalpha - check for alpha
  * @c: char input
- * 
+ *
  * Return: 0 or 1 for each case
 */
 int _isalpha(int c)
