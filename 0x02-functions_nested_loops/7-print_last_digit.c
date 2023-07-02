@@ -1,24 +1,24 @@
 #include "main.h"
 
 /**
- * print_last_digit - do required task
- * @a: input
- *
- *Return: ouput desired
- */
+* print_last_digit - do required task
+* @a: input
+*
+*Return: ouput desired
+*/
 int print_last_digit(int a)
 {
-    int b;
-    
-    if (a < 0)
-        a = -a;
+	int b;
 
-    b = a % 10;
+	if (a < 0)
+		a = -a;
 
-    if (a < 0)
-        b = -b;
+	b = a % 10;
 
-    _putchar(b + '0');
+	if (a < 0)
+		b = -b;
 
-    return (b);
+	_putchar(b + '0');
+
+	return (b);
 }
