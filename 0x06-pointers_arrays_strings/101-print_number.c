@@ -15,7 +15,7 @@ void print_number(int n)
 			_putchar('-');
 			_putchar('2');
 			print_number(147483648);
-			return ;
+			return;
 		}
 		else if (n >= 10)
 		{
