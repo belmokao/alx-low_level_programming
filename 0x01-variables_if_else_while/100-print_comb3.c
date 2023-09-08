@@ -10,23 +10,26 @@ int main(void)
 {
 	int i;
 	int j;
+	int c;
 
+	c = 49;
 	i = 48;
 	while (i <= 56)
 	{
-		j = 49;
+		j = c;
 		while (j <= 57)
 		{
 			putchar(i);
 			putchar(j);
-			if (j != 57)
+			if (i < 56)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 			j++;
 		}
-		j = 49;
+		c++;
+		j = c;
 		i++;
 	}
 	putchar('\n');
