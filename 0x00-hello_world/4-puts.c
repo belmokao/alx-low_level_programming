@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point
@@ -8,9 +7,8 @@
  */
 int main(void)
 {
-	char *link = "\"Programming is like building a multilingual puzzle\n";
+	char *link = "\"Programming is like building a multilingual puzzle";
 
-	while (*link != '\0')
-		write(1, link++, 1);
+	puts(link);
 	return (0);
 }
