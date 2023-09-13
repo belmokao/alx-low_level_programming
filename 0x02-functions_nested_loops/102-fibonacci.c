@@ -15,9 +15,9 @@ int main(void)
 	c = 0;
 	a = 1;
 	b = 1;
-	while (c < 50)
+	while (c <= 50)
 	{
-		if (c >= 49)
+		if (c > 49)
 			printf("%ld\n", a);
 		else
 			printf("%ld, ", a);
