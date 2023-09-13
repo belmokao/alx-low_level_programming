@@ -7,18 +7,24 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int n;
+	long int a;
+	long int b;
+	long int n;
+	int c;
 
+	c = 0;
 	a = 1;
 	b = 1;
-	while (a < 50)
+	while (c < 50)
 	{
-		printf("%d, ", a);
+		if (c >= 49)
+			printf("%ld\n", a);
+		else
+			printf("%ld, ", a);
 		n = a + b;
 		a = b;
 		b = n;
+		c++;
 	}
 	return (0);
 }
