@@ -12,9 +12,9 @@ int main(void)
 	long int n;
 	int c;
 
-	c = 0;
+	c = 1;
 	a = 1;
-	b = 1;
+	b = 2;
 	while (c <= 50)
 	{
 		if (c > 49)
