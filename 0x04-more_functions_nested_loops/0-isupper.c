@@ -1,7 +1,7 @@
 /**
-* _isupper - method check for uppercase chars
-* @c: is char input
-* Retrun: return is int 0 or 1
+*_isupper - method check for uppercase chars
+*@c: is char input
+*Return: return is int 0 or 1
 */
 
 int _isupper(int c)
