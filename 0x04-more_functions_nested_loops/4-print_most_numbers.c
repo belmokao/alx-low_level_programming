@@ -11,6 +11,5 @@ void print_most_numbers(void)
 
 	i = 0;
 	while (i % 2 == 0 && i <= 9)
-		_putchar('0' + i);
+		_putchar('0' + i++);
 }
-
