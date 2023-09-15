@@ -1,12 +1,13 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
 *main - check the code
 *
-*Return: Always 0.
+*Return: Always 0
 *
 *isprime - chekc n is prime number
 *@n: input var
+*
 *Return: 0 or 1 dependent in case
 */
 int isprime(int n)
@@ -20,7 +21,8 @@ int isprime(int n)
 
 int main(void)
 {
-	int p, f;
+	int p;
+	long int f;
 	long int n;
 
 	n = 612852475143;
@@ -39,7 +41,7 @@ int main(void)
 			p++;
 		}
 	}
-	printf("%d\n", f);
+	printf("%ld\n", f);
 
 	return (0);
 }
