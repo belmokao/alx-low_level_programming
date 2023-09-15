@@ -4,7 +4,9 @@
 *main - check the code
 *
 *Return: Always 0
-*
+*/
+
+/**
 *isprime - chekc n is prime number
 *@n: input var
 *
