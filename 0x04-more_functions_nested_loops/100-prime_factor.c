@@ -1,13 +1,8 @@
 #include <stdio.h>
 
 /**
-*main - check the code
-*
-*Return: Always 0
-*/
-
-/**
 *isprime - chekc n is prime number
+*@n: input factor
 *
 *Return: 0 or 1 dependent in case
 */
@@ -20,6 +15,11 @@ int isprime(int n)
 	return (1);
 }
 
+/**
+*main - check the code
+*
+*Return: Always 0
+*/
 int main(void)
 {
 	int p;
