@@ -7,10 +7,11 @@
 */
 void print_square(int size)
 {
-	if (size <= 0)
-		_putchar('\n');
 	int i;
 	int j;
+
+	if (size <= 0)
+		_putchar('\n');
 
 	i = 0;
 	while (i < size)
