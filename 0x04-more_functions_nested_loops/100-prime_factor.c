@@ -5,22 +5,6 @@
 *
 *Return: Always 0
 */
-
-/**
-*isprime - chekc n is prime number
-*@n: input var
-*
-*Return: 0 or 1 dependent in case
-*/
-int isprime(int n)
-{
-	if (n == 2 || n == 3)
-		return (1);
-	if (n % 2 == 0 || n % 3 == 0)
-		return (0);
-	return (1);
-}
-
 int main(void)
 {
 	int p;
