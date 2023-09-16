@@ -2,7 +2,7 @@
 
 /**
 *print_triangle - prints a diagonal
-*@n:parameter
+*@size:parameter
 *
 *Return: returns nothing
 */
