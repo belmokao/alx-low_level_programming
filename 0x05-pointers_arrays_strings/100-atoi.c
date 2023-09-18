@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *_atoi - method print chars number
- *@s: string intput
- *
- *Return: return int converter from string
- */
+*_atoi - method print chars number
+*@s: string intput
+*
+*Return: return int converter from string
+*/
 int _atoi(char *s)
 {
 	char sign;
