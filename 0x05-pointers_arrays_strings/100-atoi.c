@@ -28,4 +28,8 @@ int _atoi(char *s)
 				n = s + '0';
 		}
 	}
+	if (sign == '-')
+		return (-1 * n);
+	else
+		return (n);
 }
