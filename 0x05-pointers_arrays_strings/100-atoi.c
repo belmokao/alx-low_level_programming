@@ -17,7 +17,7 @@ int _atoi(char *s)
 	{
 		if (*s == '-' && sign == '-')
 			sign = '+';
-		else if (*s == '+' && sign == '-')
+		else if (*s == '-' && sign == '+')
 			sign = '-';
 		else
 			sign = '+';
@@ -31,7 +31,7 @@ int _atoi(char *s)
 		s++;
 	}
 	if (sign == '-')
-		return (-1 * n);
+		return (-n);
 	else
 		return (n);
 }
