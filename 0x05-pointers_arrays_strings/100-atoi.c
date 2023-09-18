@@ -26,6 +26,8 @@ int _atoi(char *s)
 			else
 				n = *s - '0';
 		}
+		if (*(s + 1) < '0' && *(s +1) > '9' && n !=0)
+			break;
 		s++;
 	}
 	if (sign == '-')
