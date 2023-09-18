@@ -12,20 +12,20 @@ int _atoi(char *s)
 	int n;
 
 	sign = '0';
-	while (s != '\0')
+	while (*s != '\0')
 	{
-		if (s == '-' && sign == '-')
+		if (*s == '-' && sign == '-')
 			sign = '+';
-		else if (s == '+' && sign == '-')
+		else if (*s == '+' && sign == '-')
 			sign = '-';
 		else
 			sign = '-';
-		if (s >= '0' && s <= '9')
+		if (*s >= '0' && s <= '9')
 		{
 			if (n >= 0)
-				n = (s + '0') + (n * 10);
+				n = (s - '0') + (n * 10);
 			else
-				n = s + '0';
+				n = s - '0';
 		}
 	}
 	if (sign == '-')
