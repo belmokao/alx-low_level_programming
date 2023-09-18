@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	char sign;
-	long long int n;
+	int n;
 
 	sign = '+';
 	n = 0;
