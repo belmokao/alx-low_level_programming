@@ -20,7 +20,7 @@ int _atoi(char *s)
 			sign = '-';
 		else
 			sign = '-';
-		if (*s >= '0' && s <= '9')
+		if (*s >= '0' && *s <= '9')
 		{
 			if (n >= 0)
 				n = (*s - '0') + (n * 10);
