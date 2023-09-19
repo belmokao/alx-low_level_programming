@@ -11,9 +11,9 @@ int main(void)
 {
 	char c;
 	int x;
+	int l;
 
 	srand(time(0));
-	int l;
 
 	l = (rand() /2) % 128;
 	printf("%d\n", l);
