@@ -14,8 +14,9 @@ int main(void)
 	int l;
 
 	srand(time(0));
-	l = (rand() / 4) % 128;
-	while (x <= 141414141414141414141414141414nd() / 2)% 128;
+	while (x <= 14)
+	{
+		c = (rand() / 2)% 128;
 		putchar(c);
 		x++;
 	}
