@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*print_env - print in reverse
+*print_rev - print in reverse
 *@s: inputs
 *
 *Return: void
