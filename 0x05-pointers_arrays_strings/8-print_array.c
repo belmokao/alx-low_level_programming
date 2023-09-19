@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*print_array - print 
+*print_array - print
 *@a: array of ints
 *@n: n
 *
@@ -9,6 +9,12 @@
 */
 void print_array(int *a, int n)
 {
+	if (n <= 0)
+	{
+		putchar('\n');
+		return;
+	}
+
 	int i;
 
 	i = 0;
