@@ -11,7 +11,6 @@ int main(void)
 {
 	char c;
 	int x;
-	int l;
 
 	srand(time(0));
 	while (x <= 14)
