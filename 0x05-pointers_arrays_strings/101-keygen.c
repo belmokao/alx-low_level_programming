@@ -13,6 +13,7 @@ int main(void)
 	int x;
 
 	srand(time(0));
+	x = 0;
 	do {
 		c = (rand() / 2)% 128;
 		if ((c >= 32 && c <= 47) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122)){
