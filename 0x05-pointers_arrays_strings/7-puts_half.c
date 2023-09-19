@@ -14,14 +14,7 @@ void puts_half(char *s)
 	l = 0;
 	while (s[l] != '\0')
 		l++;
-	
-	if (l == 0)
-	{
-		_putchar('\n');
-		return;
-	}
-
-	i = l / 2;
+	i = 1 + (l / 2);
 	while (i <= l)
 	{
 		_putchar(s[i++]);
