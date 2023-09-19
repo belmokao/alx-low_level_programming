@@ -15,11 +15,11 @@ int main(void)
 	srand(time(0));
 	do {
 		c = (rand() / 2)% 128;
-		if (c >= '!'){
+		if ((c >= 32 && c <= 47) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122)){
 			putchar(c);
 			x++;
 		}
-	} while (x <= 14);
+	} while (x < 14);
 	putchar('\n');
 	return (0);
 }
