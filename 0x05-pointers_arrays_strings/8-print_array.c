@@ -9,14 +9,13 @@
 */
 void print_array(int *a, int n)
 {
+	int i;
+
 	if (n <= 0)
 	{
 		putchar('\n');
 		return;
 	}
-
-	int i;
-
 	i = 0;
 	while (i < n)
 	{
