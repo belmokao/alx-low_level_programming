@@ -15,11 +15,10 @@ int main(void)
 
 	srand(time(0));
 	l = (rand() / 4) % 128;
-	while (x <= l)
-	{
-		c = (rand() / 2)% 128;
+	while (x <= 141414141414141414141414141414nd() / 2)% 128;
 		putchar(c);
 		x++;
 	}
+	putchar('\n');
 	return (0);
 }
