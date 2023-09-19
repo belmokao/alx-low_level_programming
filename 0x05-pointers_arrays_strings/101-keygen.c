@@ -14,7 +14,7 @@ int main(void)
 	int l;
 
 	srand(time(0));
-	l = (rand() /2) % 128;
+	l = (rand() / 4) % 128;
 	while (x <= l)
 	{
 		c = (rand() / 2)% 128;
