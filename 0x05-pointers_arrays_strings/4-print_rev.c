@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+*print_env - print reverse
+*@s: inputs
+*
+*REturn: void
+*/
 void print_rev(char *s)
 {
 	int i;
