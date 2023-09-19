@@ -4,16 +4,15 @@
 
 int main(void)
 {
-	char c;
-int x;
+	int c;
+int x = 0;
 
 srand(time(0));
-while (x <= 2645)
+while (x <= 128)
 {
-c = rand() % 128;
-x += c;
-putchar(c);
+c += x;
+x += 1;
 }
-putchar(2772 - x);
+printf("%d\n", c);
 return (0);
 }
