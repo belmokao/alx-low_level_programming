@@ -4,25 +4,16 @@
 
 int main(void)
 {
-    char password[100];
-    int i;
-    
-    srand(time(0));
-    for (i = 0; i < 12; i++) {
-        int category = rand() % 3;
-        switch (category) {
-            case 0:
-                password[i] = (rand() % 26) + 65;
-                break;
-            case 1:
-                password[i] = (rand() % 26) + 97;
-                break;
-            case 2:
-		password[i] = (rand() % 10) + 48;
-                break;
-        }
-    }
-    password[12] = '\0';
-    printf("%s\n", password);
-    return (0);
+	char c;
+int x;
+
+srand(time(0));
+while (x <= 2645)
+{
+c = rand() % 128;
+x += c;
+putchar(c);
+}
+putchar(2772 - x);
+return (0);
 }
