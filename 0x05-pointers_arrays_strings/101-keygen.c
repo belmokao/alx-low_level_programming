@@ -13,11 +13,12 @@ int main(void)
 	int x;
 
 	srand(time(0));
-	while (x <= 14)
-	{
+	do {
 		c = (rand() / 2)% 128;
-		putchar(c);
-		x++;
+		if (c >= '!'){
+			putchar(c);
+			x++;
+		}
 	}
 	putchar('\n');
 	return (0);
