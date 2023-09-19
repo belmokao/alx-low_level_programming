@@ -2,25 +2,27 @@
 #include <stdio.h>
 #include <time.h>
 
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
 int main(void)
 {
-	char c;
-	int x;
-
-	srand(time(0));
-	x = 0;
-	do {
-		c = (rand() / 2)% 128;
-		if ((c >= 32 && c <= 47) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122)){
-			putchar(c);
-			x++;
-		}
-	} while (x < 14);
-	putchar('\n');
-	return (0);
+    char password[100];
+    int i;
+    
+    srand(time(0));
+    for (i = 0; i < 12; i++) {
+        int category = rand() % 3;
+        switch (category) {
+            case 0:
+                password[i] = (rand() % 26) + 65;
+                break;
+            case 1:
+                password[i] = (rand() % 26) + 97;
+                break;
+            case 2:
+		password[i] = (rand() % 10) + 48;
+                break;
+        }
+    }
+    password[12] = '\0';
+    printf("%s\n", password);
+    return (0);
 }
