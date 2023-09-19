@@ -1,11 +1,20 @@
+/**
+*_strcpy - cpoy past
+*@dest: destrination
+*@src: source
+*
+*Return: return destionation
+*/
 char *_strcpy(char *dest, char *src)
 {
-	while (*src != '\0')
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
-		*dest = *src;
-		src++;
-		dest++;
+		dest[i] = src[i];
+		i++;
 	}
-	dest = '\0';
-	return dest;
+	dest[i] = '\0';
+	return (dest);
 }
