@@ -49,13 +49,12 @@ int strlenn(char *s)
 */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	if (strlenn(n1) + strlenn(n2) > size_r)
-		return (0);
-
 	int resu;
 	int i;
 	int j;
 
+	if (strlenn(n1) + strlenn(n2) > size_r)
+		return (0);
 	resu = atoii(n1) + atoii(n2);
 	i = 0;
 	while (resu > 0)
