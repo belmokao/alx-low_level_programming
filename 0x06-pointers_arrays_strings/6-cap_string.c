@@ -12,6 +12,8 @@ char *cap_string(char *str)
 	char dots[] = ",;.!?(){}\n\t\" ";
 	int j;
 
+	if (str[0] >= 97 && str[0] <= 122)
+		str[0] -= 32;
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -24,6 +26,5 @@ char *cap_string(char *str)
 		}
 		i++;
 	}
-	str[i] = '\0';
 	return (str);
 }
