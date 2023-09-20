@@ -45,7 +45,7 @@ int strlenn(char *s)
 
 /**
 *infinite_add - infiinte
-*@n1, input 1
+*@n1: input 1
 *@n2: input 2
 *@r: riri
 *@size_r: size of buffer
