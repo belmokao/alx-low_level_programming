@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * rot13 - encrypt method with 13 logic
- * @s: source string
- *
- * Return: return destination
- */
+*rot13 - encrypt method with 13 logic
+*@s: source string
+*
+*Return: return destination
+*/
 char *rot13(char *s)
 {
 	int i;
