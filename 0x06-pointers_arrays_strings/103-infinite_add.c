@@ -8,16 +8,10 @@
 */
 int atoii(char *str)
 {
-	int result = 0;
-	int sign = 1;
-	int i = 0;
+	int result;
+	int i;
 
-	if (str[0] == '-')
-	{
-		sign = -1;
-		i++;
-	}
-
+	i = 0;
 	while (str[i] != '\0')
 	{
 		int digit = str[i] - '0';
@@ -25,7 +19,7 @@ int atoii(char *str)
 		result = result * 10 + digit;
 		i++;
 	}
-	return (result * sign);
+	return (result);
 }
 
 /**
@@ -36,8 +30,9 @@ int atoii(char *str)
 */
 int strlenn(char *s)
 {
-	int i = 0;
+	int i;
 
+	i = 0;
 	while (*(s + i) != '\0')
 		i++;
 	return (i);
@@ -57,9 +52,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (strlenn(n1) + strlenn(n2) > size_r)
 		return (0);
 
-	int resu = atoii(n1) + atoii(n2);
-	int i = 0;
+	int resu;
+	int i;
+	int j;
 
+	resu = atoii(n1) + atoii(n2);
+	i = 0;
 	while (resu > 0)
 	{
 		r[i] = '0' + resu % 10;
@@ -67,8 +65,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		i++;
 	}
 
-	int j = 0;
-
+	j = 0;
 	while (i > j)
 	{
 		char c = r[j];
