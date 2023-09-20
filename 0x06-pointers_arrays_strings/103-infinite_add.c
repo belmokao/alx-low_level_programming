@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 *atoii - ato
 *@str: inpupt
@@ -11,6 +11,7 @@ int atoii(char *str)
 	int result;
 	int i;
 
+	result = 0;
 	i = 0;
 	while (str[i] != '\0')
 	{
