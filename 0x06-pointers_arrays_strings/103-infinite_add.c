@@ -64,6 +64,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		resu /= 10;
 		i++;
 	}
+	r[i] = '\0';
+	if (i >= size_r - 1)
+		return (0);
 
 	j = 0;
 	while (i > j)
