@@ -1,18 +1,16 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
-*atoii - ato
-*@str: inpupt
-*
-*Return: int
-*/
+ * atoii - Convert a string to an integer.
+ * @str: The input string.
+ *
+ * Return: The integer value of the string.
+ */
 int atoii(char *str)
 {
-	int result;
-	int i;
+	int result = 0;
+	int i = 0;
 
-	result = 0;
-	i = 0;
 	while (str[i] != '\0')
 	{
 		int digit = str[i] - '0';
@@ -40,44 +38,55 @@ int strlenn(char *s)
 }
 
 /**
-*infinite_add - infiinte
-*@n1: input 1
-*@n2: input 2
-*@r: riri
-*@size_r: size of buffer
-*
-*Return: buffer
-*/
+ * infinite_add - Add two numbers represented as strings.
+ * @n1: The first number string.
+ * @n2: The second number string.
+ * @r: The buffer to store the result.
+ * @size_r: The size of the result buffer.
+ *
+ * Return: A pointer to the result or 0 if it doesn't fit.
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int resu;
-	int i;
-	int j;
+	int len1 = strlenn(n1);
+	int len2 = strlenn(n2);
 
-	if (strlenn(n1) >= size_r || strlenn(n2) >= size_r)
-		return (0);
-	resu = atoii(n1) + atoii(n2);
-	i = 0;
-	while (resu > 0)
-	{
-		r[i] = '0' + resu % 10;
-		resu /= 10;
-		i++;
-	}
-	r[i] = '\0';
-	if (i >= size_r - 1)
+	if (len1 >= size_r || len2 >= size_r)
 		return (0);
 
-	j = 0;
-	while (i > j)
-	{
-		char c = r[j];
+	int carry = 0;
+	int i = len1 - 1;
+	int j = len2 - 1;
+	int k = 0;
 
-		r[j] = r[i - 1];
-		r[i - 1] = c;
-		j++;
+	while (i >= 0 || j >= 0 || carry > 0)
+	{
+		int digit1 = (i >= 0) ? n1[i] - '0' : 0;
+		int digit2 = (j >= 0) ? n2[j] - '0' : 0;
+		int sum = digit1 + digit2 + carry;
+
+		if (k >= size_r - 1)
+			return (0);
+		r[k] = '0' + (sum % 10);
+		carry = sum / 10;
 		i--;
+		j--;
+		k++;
 	}
-	*(r + strlenn(r)) = '\0';
+	r[k] = '\0';
+
+	int start = 0;
+	int end = k - 1;
+
+	while (start < end)
+	{
+		char temp = r[start];
+
+		r[start] = r[end];
+		r[end] = temp;
+		start++;
+		end--;
+	}
 	return (r);
 }
+
