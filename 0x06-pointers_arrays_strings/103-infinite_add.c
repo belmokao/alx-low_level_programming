@@ -48,16 +48,16 @@ int strlenn(char *s)
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int len1 = strlenn(n1);
-	int len2 = strlenn(n2);
+	int len1, len2, i, j, k, carry, start, end;
 
+	len1 = strlenn(n1);
+	len2 = strlenn(n2);
 	if (len1 >= size_r || len2 >= size_r)
 		return (0);
-
-	int carry = 0;
-	int i = len1 - 1;
-	int j = len2 - 1;
-	int k = 0;
+	carry = 0;
+	i = len1 - 1;
+	j = len2 - 1;
+	k = 0;
 
 	while (i >= 0 || j >= 0 || carry > 0)
 	{
@@ -74,10 +74,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		k++;
 	}
 	r[k] = '\0';
-
-	int start = 0;
-	int end = k - 1;
-
+	start = 0;
+	end = k - 1;
 	while (start < end)
 	{
 		char temp = r[start];
@@ -89,4 +87,3 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 	return (r);
 }
-
